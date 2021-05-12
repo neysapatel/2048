@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.target=GameOver
-comment0.text=\r\n\ Game\ over\ message\ appears\ on\ the\ screen\ when\ the\ game\ is\ over\r\n
-comment1.params=
-comment1.target=GameOver()
-numComments=2

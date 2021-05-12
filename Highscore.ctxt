@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=Highscore
-comment0.text=\r\n\ Displays\ highscore\ on\ the\ screen\ as\ a\ picture\r\n\ (the\ CoverPage()\ class\ and\ the\ GameSquare()\ class\ already\ read\ the\ highscore\ from\ a\ file)\r\n
-comment1.params=gameScore\ isGameOver
-comment1.target=Highscore(int,\ boolean)
-comment2.params=val\ size
-comment2.target=void\ printText(java.lang.String,\ int)
-numComments=3
