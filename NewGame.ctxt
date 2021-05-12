@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=NewGame
+comment0.text=\r\n\ UI\ button\ element\r\n\ Starts\ a\ new\ game\ when\ the\ player\ clicks\ on\ "New\ Game"\r\n\ This\ button\ is\ on\ the\ cover\ page\ to\ start\ the\ game\ and\ also\ on\ the\ game\ over\ page.\r\n
+comment1.params=
+comment1.target=NewGame()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

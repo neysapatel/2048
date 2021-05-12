@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CoverPage
+comment0.text=\r\n\ This\ class\ shows\ the\ game's\ coverpage\ when\ the\ game\ is\ run.\r\n\ It\ shows\ an\ intro\ (title\ of\ the\ game\ with\ quick\ instructions),\ music,\ highscore,\ and\ a\ UI\ newGame\ button.\r\n\ The\ game\ will\ start\ the\ (new)\ game\ when\ "New\ Game"\ is\ clicked\ on\ the\ screen.\r\n
+comment1.params=
+comment1.target=CoverPage()
+comment2.params=
+comment2.target=int\ getHighscore()
+numComments=3

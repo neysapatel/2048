@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Score
+comment0.text=\r\n\ Displays\ the\ score\ on\ the\ screen\ as\ a\ picture\r\n\ (the\ game's\ current\ score\ for\ each\ game\ is\ caluclated\ in\ the\ GameSquare()\ class)\r\n
+comment1.params=gameScore\ isGameOver
+comment1.target=Score(int,\ boolean)
+comment2.params=val\ size
+comment2.target=void\ printText(java.lang.String,\ int)
+numComments=3

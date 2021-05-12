@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GameBoard
+comment0.text=\r\n\ Construct\ world\ and\ add\ objects\ to\ start\ the\ game\r\n
+comment1.params=
+comment1.target=GameBoard()
+numComments=2
