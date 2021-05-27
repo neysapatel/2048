@@ -5,9 +5,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 
 public class GameOver extends Actor {
-    private GreenfootImage gameOver= new GreenfootImage("gameOver.png");
-    //load picture
-       public GameOver() { //resize gameOver picture and show on screen
+    private GreenfootImage gameOver = new GreenfootImage("gameOver.png"); //load picture
+
+       // resize gameOver picture and show on screen
+       public GameOver() {
         gameOver.scale(480,100);
         setImage(gameOver);
     }

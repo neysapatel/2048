@@ -9,9 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BlockValue extends Actor {
     private int blockValue = 0;
     private GreenfootImage makeBlock;
-    
-    public BlockValue(int block, int size) { //replace number with image of the block number from the original game
-        //for example, 2 becomes the picture of the block '2' from the original game
+
+    //replace number with image of the block number from the original game
+    //   for example, 2 becomes the picture of the block '2' from the original game
+    public BlockValue(int block, int size) { 
         fixBlock(block); //changes number to picture
         size(size); //resizes picture to fit game square
     }
@@ -20,14 +21,16 @@ public class BlockValue extends Actor {
         if(block <= 2048 && block !=0) {
             makeBlock = new GreenfootImage(block + ".png");
             setImage(makeBlock);
-        }
-        else { //if picture can't be found, output error image (blank picture)
+        } 
+        // if picture can't be found, output error image (blank picture)
+        else {
             makeBlock = new GreenfootImage("error.png");
             setImage(makeBlock);
         }
     }
-    
-    public void size(int size) { //resize picture to fit inside the game square
+
+    // resize picture to fit inside the game square
+    public void size(int size) {
         makeBlock.scale(size,size);
         setImage(makeBlock);
     }

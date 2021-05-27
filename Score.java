@@ -14,15 +14,16 @@ public class Score extends Actor {
     
         if (isGameOver) {
             text = "Final score: "+ gameScore;
-            printText(text,70); //make the font size 70 when the game is over
+            printText(text,70); // make the font size 70 when the game is over
         }
         else {
             text = "Score: "+ gameScore;
-            printText(text,40); //make the font size 40 during the game
+            printText(text,40); // make the font size 40 during the game
         }
     }
 
-     public void printText(String val,int size) { //show score on the screen
+     // show score on the screen
+     public void printText(String val,int size) {
         setImage(new GreenfootImage(val, size, Color.WHITE, Color.GRAY));
     }
 }

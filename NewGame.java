@@ -7,14 +7,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 
 public class NewGame extends Actor {
-    private GreenfootImage newGame = new GreenfootImage("newGame.png"); //get picture
+    private GreenfootImage newGame = new GreenfootImage("newGame.png"); // get picture
 
     public NewGame() { 
-        newGame.scale(480,200); //resize picture
-        setImage(newGame); //show picture on screen
+        newGame.scale(480,200); // resize picture
+        setImage(newGame); // show picture on screen
     }
     
-    public void act() { //starts game if the user clicks on it
+    // starts game if the user clicks on it
+    public void act() {
        if (Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new GameBoard());
         }

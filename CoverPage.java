@@ -28,14 +28,19 @@ public class CoverPage extends World {
         music.playMusic(); //play music
     }
 
-    public int getHighscore() { //Load the game's highscore from the highscore.txt file
+    // Load the game's highscore from the highscore.txt file (currently has random default scores)
+    public int getHighscore() {
         int hs = 0;
-        try { //set up file reader, read highscore from the file, close file reader
+	
+	// set up file reader, read highscore from the file, close file reader
+        try {
             InputStream input = getClass().getClassLoader().getResourceAsStream("highscore.txt");
             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
             String score = reader.readLine();
             reader.close();
-            if (score != "") { //if the file is not empty, save the highscore as hs
+
+	    // if the file is not empty, save the highscore as hs
+            if (score != "") {
                 hs = Integer.parseInt(score);
             }
         } 

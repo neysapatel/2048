@@ -10,7 +10,8 @@ public class Highscore extends Actor{
     private String text ="Score: 0";
     private GreenfootImage image;
 
-    public Highscore(int gameScore, boolean isGameOver){ //Displays the highscore in different sizes depending on the game status (game over or not)
+    // Displays the highscore in different sizes depending on the game status (game over or not)
+    public Highscore(int gameScore, boolean isGameOver){
         
         text = "Highscore: "+ gameScore;
         if (isGameOver) {
@@ -21,7 +22,8 @@ public class Highscore extends Actor{
         }
     }
 
-    public void printText(String val,int size) {  //show Highscore on the screen
+    // show Highscore on the screen
+    public void printText(String val,int size) {
         setImage(new GreenfootImage(val, size, Color.WHITE, Color.GRAY));
     }
 }

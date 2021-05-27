@@ -26,9 +26,10 @@ public class Music extends Actor {
     }
 
     public void playMusic() {
-        if(musicPlaying) { //if the player doesn't stop the music
+	// if the player doesn't stop the music
+        if(musicPlaying) {
             try {
-                backgroundMusic.playLoop(); //repeat playing the background music
+                backgroundMusic.playLoop(); // repeat playing the background music
             }
             catch (Exception e) {
                 System.err.println("Error!");
@@ -37,18 +38,22 @@ public class Music extends Actor {
     }
 
     public void act() {
-        if (Greenfoot.mouseClicked(this)) { //if the player clicks on the music picture, they can turn the music off
-            //clicking on it again will turn the music on
-            if (musicPlaying) { //if the music was playing when the user clicked on the picture, pause the music
+	// if the player clicks on the music picture, they can turn the music off
+	// clicking on it again will turn the music on
+        if (Greenfoot.mouseClicked(this)) {
+            
+	    // if the music was playing when the user clicked on the picture, pause the music
+            if (musicPlaying) {
                 try {
                     backgroundMusic.pause();
                 }
                 catch (Exception e) {
                     System.err.println("Error!");
                 }
-                musicPlaying = false; //music not playing
+                musicPlaying = false; // music not playing
             }
-            else if (!musicPlaying) { //if the music was not playing when the user clicked on the picture, start the music
+	    // if the music was not playing when the user clicked on the picture, start the music
+            else if (!musicPlaying) {
                 try {
                     backgroundMusic.playLoop();
                 }
@@ -59,9 +64,11 @@ public class Music extends Actor {
                 musicPlaying = true; //music playing
             }
         }
+
         if (musicPlaying) {
             setImage(musicOn);
         }
+
         if (!musicPlaying) {
             setImage(noMusic);
         }
